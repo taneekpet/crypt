@@ -6,9 +6,9 @@ require (
 	cloud.google.com/go/firestore v1.9.0
 	github.com/hashicorp/consul/api v1.20.0
 	github.com/pkg/errors v0.9.1
-	go.etcd.io/etcd/api/v3 v3.5.7
+	go.etcd.io/etcd/api/v3 v3.5.9
 	go.etcd.io/etcd/client/v2 v2.305.7
-	go.etcd.io/etcd/client/v3 v3.5.7
+	go.etcd.io/etcd/client/v3 v3.5.9
 	golang.org/x/crypto v0.8.0
 	google.golang.org/api v0.110.0
 	google.golang.org/grpc v1.55.0
@@ -42,7 +42,7 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	go.etcd.io/etcd/client/pkg/v3 v3.5.7 // indirect
+	go.etcd.io/etcd/client/pkg/v3 v3.5.9 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
