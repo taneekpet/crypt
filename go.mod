@@ -7,7 +7,7 @@ require (
 	github.com/hashicorp/consul/api v1.20.0
 	github.com/pkg/errors v0.9.1
 	go.etcd.io/etcd/api/v3 v3.5.9
-	go.etcd.io/etcd/client/v2 v2.305.7
+	go.etcd.io/etcd/client/v2 v2.305.9
 	go.etcd.io/etcd/client/v3 v3.5.9
 	golang.org/x/crypto v0.9.0
 	google.golang.org/api v0.125.0
