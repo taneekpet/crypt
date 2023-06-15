@@ -86,6 +86,7 @@ func NewStandardConsulConfigManager(machines []string) (ConfigManager, error) {
 	return NewStandardConfigManager(store)
 }
 
+// NewStandardNatsConfigManager returns a new ConfigManager backed by NATS.
 func NewStandardNatsConfigManager(machines []string) (ConfigManager, error) {
 	store, err := natskv.New(machines)
 	if err != nil {
@@ -134,6 +135,8 @@ func NewConsulConfigManager(machines []string, keystore io.Reader) (ConfigManage
 	return NewConfigManager(store, keystore)
 }
 
+// NewNatsConfigManager returns a new ConfigManager backed by NATS.
+// Data will be encrypted.
 func NewNatsConfigManager(machines []string, keystore io.Reader) (ConfigManager, error) {
 	store, err := natskv.New(machines)
 	if err != nil {
