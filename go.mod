@@ -3,7 +3,7 @@ module github.com/sagikazarmark/crypt
 go 1.17
 
 require (
-	cloud.google.com/go/firestore v1.10.0
+	cloud.google.com/go/firestore v1.11.0
 	github.com/hashicorp/consul/api v1.21.0
 	github.com/pkg/errors v0.9.1
 	go.etcd.io/etcd/api/v3 v3.5.9
@@ -18,7 +18,7 @@ require (
 	cloud.google.com/go v0.110.2 // indirect
 	cloud.google.com/go/compute v1.19.3 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
-	cloud.google.com/go/longrunning v0.4.2 // indirect
+	cloud.google.com/go/longrunning v0.5.0 // indirect
 	github.com/armon/go-metrics v0.4.0 // indirect
 	github.com/coreos/go-semver v0.3.0 // indirect
 	github.com/coreos/go-systemd/v22 v22.3.2 // indirect
