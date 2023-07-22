@@ -35,6 +35,7 @@ func (c *Client) Get(key string) ([]byte, error) {
 }
 
 func (c *Client) GetWithContext(ctx context.Context, key string) ([]byte, error) {
+	defer c.conn.Close()
 	kv, err := c.js.KeyValue(c.bucket)
 	if err != nil {
 		return nil, err
@@ -53,6 +54,7 @@ func (c *Client) List(bucket string) (backend.KVPairs, error) {
 }
 
 func (c *Client) ListWithContext(ctx context.Context, bucket string) (backend.KVPairs, error) {
+	defer c.conn.Close()
 	res := backend.KVPairs{}
 	kv, err := c.js.KeyValue(c.bucket)
 	if err != nil {
@@ -85,6 +87,7 @@ func (c *Client) Set(key string, value []byte) error {
 }
 
 func (c *Client) SetWithContext(ctx context.Context, key string, value []byte) error {
+	defer c.conn.Close()
 	kv, err := c.js.KeyValue(c.bucket)
 	if err != nil {
 		return err
@@ -103,6 +106,7 @@ func (c *Client) Watch(key string, stop chan bool) <-chan *backend.Response {
 }
 
 func (c *Client) WatchWithContext(ctx context.Context, key string, stop chan bool) <-chan *backend.Response {
+	defer c.conn.Close()
 	ch := make(chan *backend.Response, 0)
 
 	kv, err := c.js.KeyValue(c.bucket)
@@ -117,6 +121,7 @@ func (c *Client) WatchWithContext(ctx context.Context, key string, stop chan boo
 
 	go func() {
 		go func() {
+			defer c.conn.Close()
 			<-stop
 			watch.Stop()
 		}()
