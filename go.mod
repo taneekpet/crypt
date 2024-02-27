@@ -7,9 +7,9 @@ require (
 	github.com/hashicorp/consul/api v1.25.1
 	github.com/nats-io/nats.go v1.31.0
 	github.com/pkg/errors v0.9.1
-	go.etcd.io/etcd/api/v3 v3.5.10
+	go.etcd.io/etcd/api/v3 v3.5.12
 	go.etcd.io/etcd/client/v2 v2.305.10
-	go.etcd.io/etcd/client/v3 v3.5.10
+	go.etcd.io/etcd/client/v3 v3.5.12
 	golang.org/x/crypto v0.20.0
 	google.golang.org/api v0.155.0
 	google.golang.org/grpc v1.62.0
@@ -49,7 +49,7 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/nats-io/nkeys v0.4.6 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
-	go.etcd.io/etcd/client/pkg/v3 v3.5.10 // indirect
+	go.etcd.io/etcd/client/pkg/v3 v3.5.12 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.46.1 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.46.1 // indirect
