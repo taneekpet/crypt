@@ -1,6 +1,6 @@
 module github.com/sagikazarmark/crypt
 
-go 1.18
+go 1.20
 
 require (
 	cloud.google.com/go/firestore v1.15.0
